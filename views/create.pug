@@ -1,0 +1,24 @@
+extends layout/main-layout.pug
+
+block content
+    h1 This is Create Page
+    form(action="/success_page", method="post") 
+        label(for="name") Enter Your Name 
+        input(type="text" name='name') 
+        br
+
+        label(for="qualify") Enter Your Qualifications
+        input(type="text" name='qualify')
+        br
+
+        label(for="skills") Choose Your skills
+        select#skills(name="skills") 
+
+            option(value="python") Python
+            option(value="c++") C++
+            option(value="java") Java
+            option(value="javascript") JavaScript
+            option(value="c#") C#
+        br
+
+        button(type="submit") Submit

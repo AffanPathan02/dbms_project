@@ -1,0 +1,15 @@
+extends ../layout/main-layout.pug
+block content
+    h1 This is Register Page
+    form(action="/register", method="post") 
+        div 
+            label(for="name") Enter Name
+            input(type="text" name='name')
+        div 
+            label(for="email_id") Enter Email ID
+            input(type="text" name='email_id')
+        div 
+            label(for="password") Enter Password
+            input(type="password" name='password')
+        div   
+            button(type="submit") Sign Up
