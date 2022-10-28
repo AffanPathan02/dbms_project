@@ -15,5 +15,5 @@ exports.postRegister=async(req,res)=>{
         password:hash
     })
     await user.save()
-    res.redirect('/')
+    res.render('success_login',{pageProp:'User Created'})
 }

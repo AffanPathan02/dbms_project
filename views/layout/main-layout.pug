@@ -33,16 +33,20 @@ header
             a.nav__link(href='/login')
               i.bx.bx-user
               |  Login
-        li.nav__item
-          a.nav__link(href='/register')
-            i.bx.bx-briefcase-alt-2
-            |  Register
+          li.nav__item
+            a.nav__link(href='/register')
+              i.bx.bx-briefcase-alt-2
+              |  Register
         
         if(isAuthenticated)
           li.nav__item
             a.nav__link(href='/create')
               i.bx.bx-bookmark
               |  Create
+          li.nav__item
+            a.nav__link(href='/update')
+              i.bx.bx-book
+              |  Update
         li.nav__item
           a.nav__link(href='/about')
             i.bx.bx-message-square-detail
@@ -51,7 +55,7 @@ header
         if(isAuthenticated)
           form(action="/logout", method="post") 
             li.nav__item
-              button(type="submit").nav__link(href='/logout')
+              button(type="submit").butt__link(href='/logout')
                 i.bx.bx-user
                 |  Logout
   // =============== MAIN ===============

@@ -13,6 +13,7 @@ exports.postLogin = async (req,res)=>{
             if(validPassword){
                 req.session.user_id=user._id
                 req.session.username=user.name
+                req.session.email_id=user.email_id
 
                 res.render('success_login',{pageProp:'Login'}); 
 

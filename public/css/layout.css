@@ -163,6 +163,18 @@ img {
   transition: .3s;
 }
 
+.butt__link {
+  padding: 9px;
+  margin-top: -38px;
+  margin-left: 85px;
+  color: var(--text-color-dark);
+  align-items: center;
+  column-gap: 1rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  transition: .3s;
+}
+
 .nav__link i {
   font-size: 1.15rem;
 }

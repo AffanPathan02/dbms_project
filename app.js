@@ -11,11 +11,12 @@ const createPage=require('./routes/createRoute')
 const registerPage=require('./routes/registerRoute')
 const loginPage=require('./routes/loginRoute');
 const logoutPage=require('./routes/logoutRoute')
+const updatePage=require('./routes/updateRoute')
 
 
-//config settings
 const app=express();
 
+//config settings
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(session({secret:'resources',resave:false,saveUninitialized:false}));
@@ -44,6 +45,7 @@ app.use(createPage.routes)
 app.use(registerPage.routes)
 app.use(loginPage.routes)
 app.use(logoutPage.routes)
+app.use(updatePage.routes)
 
 app.listen(3000,(req,res)=>{
     console.log('listening on port 3000');
